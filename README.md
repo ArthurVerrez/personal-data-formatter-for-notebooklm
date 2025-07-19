@@ -1,6 +1,6 @@
 # Personal Data Formatter for NotebookLM
 
-A Python utility to parse and format personal data exports from various services (Google Contacts, Messenger, WhatsApp, etc.) into clean, word-count-limited files, ready for use with Large Language Models like NotebookLM.
+A Python utility to parse and format personal data exports from various services (Google Contacts, Messenger, WhatsApp, etc.) into clean, word-count-limited files, ready for use with [NotebookLM](https://notebooklm.google.com/) that can handle up to 500k sources.
 
 ## Setup
 
