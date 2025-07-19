@@ -1,0 +1,34 @@
+# General Configuration
+WORD_LIMIT_PER_FILE: 300000 # In theory, NotebookLM can go up to 500k words, but to be safe, we cap it at 300k
+BASE_INPUT_DIR: "raw_sources"
+BASE_OUTPUT_DIR: "sources"
+FLAT_OUTPUT_DIR: "sources-to-copy" # For easy drag-and-drop
+
+# User-specific Configuration
+# List of all possible names used by the data owner across different platforms.
+# This is crucial for correctly identifying messages in chat exports.
+# First one is for Messenger, second one is for Instagram
+EXPORT_OWNER_NAMES: ["Arthur Verrez", "Arthur"]
+
+# Module-specific Paths
+PATHS:
+  CHATGPT:
+    INPUT_FILE: "chatgpt/conversations.json"
+    OUTPUT_DIR: "chatgpt"
+  GOOGLE_CONTACTS:
+    INPUT_FILE: "google_contacts/contacts.csv"
+    OUTPUT_DIR: "google_contacts"
+  GOOGLE_KEEP:
+    INPUT_DIR: "google_keep"
+    OUTPUT_DIR: "google_keep"
+  GOOGLE_TASKS:
+    INPUT_FILE: "google_tasks/Tasks.json"
+    OUTPUT_DIR: "google_tasks"
+  MESSENGER_INSTAGRAM:
+    PLATFORMS: ["messenger", "instagram"]
+  WHATSAPP:
+    INPUT_DIR: "whatsapp"
+    OUTPUT_DIR: "whatsapp"
+  # Add this section for the unhandled files processor
+  UNHANDLED:
+    OUTPUT_DIR: "unhandled"
